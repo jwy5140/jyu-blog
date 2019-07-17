@@ -70,7 +70,7 @@ font:
     target: &font-family-target 'Open Sans'
   weight:
     standard: 400
-    bold: 600
+    bold: 800
   size:
     xxs: &font-size-xs .8em
     xs: &font-size-xs .95em

@@ -34,9 +34,10 @@ const Contact = props => {
   }
 
   function sendMessage(values) {
-    fetch("/", {
+    fetch("https://formspree.io/jwy5140@gmail.com", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      // headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      headers: { "Content-Type": "application/json"},
       body: encode({ "form-name": "contact", ...values })
     })
       .then(() => {

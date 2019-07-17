@@ -2,4 +2,6 @@
 title: author
 ---
 
-**Mr. Gatsby** Proin ornare ligula eu tellus tempus elementum. Aenean [bibendum](/) iaculis mi, nec blandit lacus interdum vitae. Vestibulum non nibh risus, a scelerisque purus. Blandit lacus interdum vitae. Vestibulum non nibh risus, a scelerisque purus.
+**Jeffrey Yu**  
+Hi, thanks for reading. If you would like to know more about me -- you can do that **[here.](https://www.jayewe.com/about)**  
+Questions, comments, and criticisms are always welcome! Just send me a message **[here!](https://www.jayewe.com/contact)**

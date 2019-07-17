@@ -51,6 +51,15 @@ module.exports = {
     `gatsby-plugin-styled-jsx`, // the plugin's code is inserted directly to gatsby-node.js and gatsby-ssr.js files
     `gatsby-plugin-styled-jsx-postcss`, // as above
     {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: process.env.BUCKET_NAME,
+        protocol: "https",
+        hostname: "jayewe.com",
+        acl: null
+      },
+    },
+    {
       resolve: `gatsby-plugin-layout`,
       options: {
         component: require.resolve(`./src/layouts/`)
@@ -269,6 +278,6 @@ module.exports = {
       options: {
         include: /svg-icons/
       }
-    }
+    },
   ]
 };

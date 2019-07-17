@@ -1,0 +1,11 @@
+{
+  "965|serve": {
+    "fix": 1
+  },
+  "971|serve": {
+    "fix": 1
+  },
+  "826|webpack-bundle-analyzer": {
+    "fix": 1
+  }
+}

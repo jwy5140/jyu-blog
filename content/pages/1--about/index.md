@@ -1,27 +1,36 @@
 ---
-title: About
+title: About Me
+menuTitle: About Me  
 ---
 
-This is a demo site of the [HeroBlog](https://github.com/greglobinski/gatsby-starter-hero-blog), a [GatsbyJS](https://www.gatsbyjs.org/) starter.
+Hi there, I'm Jeff. Looks like you found your way onto my personal website! Welcome!
 
-### Features:
+To introduce myself - I originally graduated university with a Bachelor's degrees in Engineering and Russian, but am currently pursuing Software Engineering.
 
-* Easy editable content in **Markdown** files (posts, pages and parts)
-* **CSS** with `styled-jsx` and `PostCSS`
-* **SEO** (sitemap generation, robot.txt, meta and OpenGraph Tags)
-* **Social** sharing (Twitter, Facebook, Google, LinkedIn)
-* **Comments** (Facebook)
-* **Images** lazy loading and `webp` support (gatsby-image)
-* Post **categories** (category based post list)
-* Full text **searching** (Algolia)
-* **Contact** form (Netlify form handling)
-* **RSS** feed
-* 100% **PWA** (manifest.webmanifest, offline support, favicons)
-* Google **Analytics**
-* App **favicons** generator (node script)
-* Easy customizable base **styles** via `theme` object generated from `yaml` file (fonts, colors, sizes)
-* React **v.16** (gatsby-plugin-react-next)
-* **Components** lazy loading (social sharing)
-* **ESLint** (google config)
-* **Prettier** code styling
-* Webpack `BundleAnalyzerPlugin`
+There are so many possibilities to create, improve, and help through the applications that we build - and these bring us a sense of fulfillment.
+
+However, in order to achieve creation, improvement, and to succeed in helping others - we need to learn first!
+
+So I've devoted myself to the journey of lifelong learning, and hope that I also discover along the way.
+
+This blog serves as a tool to share what I encounter on that journey :) 
+
+## My Current Languages:
+
+* Javascript || React
+* Ruby || Rails
+* SQL || PostgreSQL, MySQL
+
+## My Next Learning Goals:
+
+* Improving my C++
+* Delving into Scala
+
+## A few other things about me:
+
+* I'm from Long Island, NY, and currently living in **Queens, NY**.
+* My favorite city is Berlin.
+* I studied **Petroleum Engineering** and **Russian** at **Penn State** (We Are!)
+* I love **snowboarding** and **hiking**.
+* **Electronic Music** holds a special place in my heart.
+* I'm E.I.T. certified.
