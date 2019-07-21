@@ -2,10 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 require("core-js/fn/array/from");
 
-import { FaHome } from "react-icons/fa/";
-import { FaSearch } from "react-icons/fa/";
-import { FaEnvelope } from "react-icons/fa/";
-import { FaTag } from "react-icons/fa/";
+import { FaHome, FaSearch, FaEnvelope, FaListAlt, FaPortrait, FaCode, FaLaughBeam } from "react-icons/fa/";
 
 import Item from "./Item";
 import Expand from "./Expand";
@@ -24,9 +21,11 @@ class Menu extends React.Component {
 
     this.items = [
       { to: "/", label: "Home", icon: FaHome },
-      { to: "/blogposts/", label: "Blogposts", icon: FaTag },
+      { to: "/blogposts/", label: "Categories", icon: FaListAlt },
       { to: "/search/", label: "Search", icon: FaSearch },
-      ...pages,
+      { to: "/about/", label: "About Me", icon: FaPortrait },
+      { to: "/projects/", label: "Projects", icon: FaCode },
+      { to: "/xkcd/", label: "xkcd", icon: FaLaughBeam },
       { to: "/contact/", label: "Contact", icon: FaEnvelope }
     ];
 

@@ -17,28 +17,20 @@ import { ThemeContext } from "../../layouts";
 const Contact = props => {
   const { getFieldDecorator } = props.form;
 
-  function encode(data) {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-  }
-
   function handleSubmit(e) {
     e.preventDefault();
     props.form.validateFields((err, values) => {
       if (!err) {
-        console.log("Received values of form: ", values);
+        console.log("Received values of form: ", JSON.stringify({...values}));
         sendMessage(values);
       }
     });
   }
 
   function sendMessage(values) {
-    fetch("https://formspree.io/jwy5140@gmail.com", {
+    fetch("https://slg7aagyti.execute-api.us-east-1.amazonaws.com/default/contact-us", {
       method: "POST",
-      // headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      headers: { "Content-Type": "application/json"},
-      body: encode({ "form-name": "contact", ...values })
+      body: JSON.stringify({ ...values })
     })
       .then(() => {
         console.log("Form submission success");
@@ -46,7 +38,7 @@ const Contact = props => {
       })
       .catch(error => {
         console.error("Form submission error:", error);
-        this.handleNetworkError();
+        handleNetworkError();
       });
   }
 
@@ -62,8 +54,6 @@ const Contact = props => {
             <Form
               name="contact"
               onSubmit={handleSubmit}
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
             >
               <FormItem label="Name">
                 {getFieldDecorator("name", {
