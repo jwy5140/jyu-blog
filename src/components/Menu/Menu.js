@@ -25,7 +25,8 @@ class Menu extends React.Component {
       { to: "/search/", label: "Search", icon: FaSearch },
       { to: "/about/", label: "About Me", icon: FaPortrait },
       { to: "/projects/", label: "Projects", icon: FaCode },
-      { to: "/contact/", label: "Contact", icon: FaEnvelope }
+      { to: "/experiments/", label: "For Fun", icon: FaLaughBeam },
+      { to: "/contact/", label: "Contact Me", icon: FaEnvelope }
     ];
 
     this.renderedItems = []; // will contain references to rendered DOM elements of menu
@@ -121,7 +122,7 @@ class Menu extends React.Component {
   };
 
   closeMenu = e => {
-    //e.preventDefault();
+    // e.preventDefault();
 
     if (this.state.open) {
       this.setState({ open: false });
@@ -182,7 +183,7 @@ class Menu extends React.Component {
             justify-content: center;
             list-style: none;
             margin: 0;
-            padding: 0; /* 0 ${theme.space.s}; */
+            padding: 0; 
             position: relative;
             width: 100%;
           }

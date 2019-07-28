@@ -38,9 +38,6 @@ const Item = props => {
             <span>
               <FaCalendar size={18} /> {prefix}
             </span>
-            <span>
-              <FaUser size={18} /> {author}
-            </span>
             {category && (
               <span>
                 <FaTag size={18} /> {category}
