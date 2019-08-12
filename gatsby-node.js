@@ -1,4 +1,4 @@
-//const webpack = require("webpack");
+// const webpack = require("webpack");
 const _ = require("lodash");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const path = require("path");
@@ -153,6 +153,11 @@ exports.onCreateWebpackConfig = ({ stage, actions }, options) => {
   switch (stage) {
     case `build-javascript`:
       actions.setWebpackConfig({
+        // resolve: {
+        //   alias: {
+        //     'react-dom': '@hot-loader/react-dom'
+        //   }
+        // },
         plugins: [
           new BundleAnalyzerPlugin({
             analyzerMode: "static",
@@ -162,6 +167,6 @@ exports.onCreateWebpackConfig = ({ stage, actions }, options) => {
             defaultSizes: "gzip"
           })
         ]
-      });
-  }
+      // });
+  })}
 };

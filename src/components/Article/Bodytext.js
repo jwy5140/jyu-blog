@@ -48,7 +48,6 @@ const Bodytext = props => {
             text-decoration: underline;
           }
           :global(a.gatsby-resp-image-link) {
-            border: 0;
             display: block;
             margin: 2.5em 0;
             border-radius: ${theme.size.radius.default};

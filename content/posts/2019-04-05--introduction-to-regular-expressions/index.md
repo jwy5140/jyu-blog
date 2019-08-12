@@ -53,6 +53,7 @@ _In Windows, pressing 'return' generates '\r\n', in Linux and Unix, only '\n' is
 
 ## Differences in functionality between languages
 Although regular expressions are easily distinguishable by their syntax, there are differences between their application in different languages. For example, JavaScript and C++ do not have regular expression conditionals, whereas Ruby does. This can significantly change how a regular expression is written to solve a specific problem. For example, in Ruby, one might write something like:
+
 ```ruby
 tel = "123-456-7890".match /^(1-)?(?(1)\d{3}-|(\d{3}-)?)\d{3}-\d{4}/
 ```

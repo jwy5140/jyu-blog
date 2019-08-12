@@ -3,7 +3,7 @@ import { ThemeContext } from "../layouts";
 import Article from "../components/Article";
 import Headline from "../components/Article/Headline";
 import { Select } from "antd"
-import Comics from './xkcd'
+import Comics from '../components/XKCD/xkcd'
 import 'antd/dist/antd.css';
 
 const Experiments = () => {
@@ -15,7 +15,6 @@ const Experiments = () => {
         switch (select){
             case 'Infinite XKCD':
                 return <Comics />
-            break;
             default:
                 return null
         }

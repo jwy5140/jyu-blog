@@ -1,12 +1,8 @@
 import React, { useState, Fragment, useEffect } from 'react';
-import { ThemeContext } from '../layouts';
-import Article from "../components/Article";
-import Headline from "../components/Article/Headline";
-import Comic from '../images/jpg/comic'
+import Comic from './comic'
 import uuid from 'uuid/v4'
-import { Z_BLOCK } from 'zlib';
 
-const comicPage = () => {
+const ComicPage = () => {
 
     const [comics, setComics] = useState([])
     const [fetching, setFetching] = useState(true)
@@ -18,7 +14,7 @@ const comicPage = () => {
 
     useEffect(()=>{
         if (fetching){
-            fetch(`https://cors-anywhere.herokuapp.com/http://xkcd.com/${Math.floor(Math.random()*2178)}/info.0.json`)
+            fetch(`https://3dq440kes5.execute-api.us-east-1.amazonaws.com/Production?comicID=${Math.floor(Math.random()*2178)}`)
             .then(resp=>resp.json())
             .then(json=>{
                 setComics([...comics, json.img])
@@ -35,10 +31,8 @@ const comicPage = () => {
 
     const handleScroll = () => {
         if ((document.documentElement.scrollTop + document.documentElement.offsetHeight) >= (document.querySelector('#comics').lastChild.offsetTop + document.querySelector('#comics').lastChild.scrollHeight)){
-            console.log('yes')
             setFetching(true)
         }
-        else{console.log('no')}
     }
 
     return (<Fragment>
@@ -59,4 +53,4 @@ const comicPage = () => {
     </Fragment>)
 }
 
-export default comicPage
+export default ComicPage
