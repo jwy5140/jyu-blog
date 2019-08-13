@@ -13,7 +13,7 @@ However, in order to achieve creation, improvement, and to succeed in helping ot
 
 So I've devoted myself to the journey of lifelong learning, and hope that I also discover along the way.
 
-This blog serves as a tool to share what I encounter on that journey :) 
+This blog serves as a tool to share what I encounter on that journey.
 
 ## My Current Languages:
 

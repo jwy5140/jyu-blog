@@ -224,7 +224,7 @@ const Item = props => {
             }
             :global(.arrow) {
               display: inline-block;
-              fill: ${theme.color.special.attention};
+              fill: transparent;
               stroke: ${theme.color.special.attention};
               stroke-width: 40;
               stroke-linecap: round;

@@ -16,6 +16,8 @@ module.exports = function(chunksTotal, { node }) {
     ];
   }, []);
 
+  console.log(recordChunks)
+
   return [...chunksTotal, ...recordChunks];
 };
 
