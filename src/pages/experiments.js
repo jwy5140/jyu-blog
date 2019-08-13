@@ -6,6 +6,8 @@ import { Select } from "antd"
 import Comics from '../components/XKCD/xkcd'
 import 'antd/dist/antd.css';
 
+import InfoBox from '../components/Info/infobox'
+
 const Experiments = () => {
 
     const [select, setSelect] = useState('');
@@ -24,33 +26,36 @@ const Experiments = () => {
         <Fragment>
             <ThemeContext.Consumer>
                 {theme => (
-                <Article theme={theme}>
-                    <header>
-                        <Headline title='Bored? Check these out.' theme={theme} />
-                    </header>
-                    <div id='experiment-dropdown'>
-                        <Select defaultValue='' onChange={(e)=>{setSelect(e)}}>
-                            <Option value='' disabled>Select an Experiment</Option>
-                            <Option value='Infinite XKCD'>Infinite XKCD</Option>
-                            <Option value='placeholder 1'>Placeholder 1</Option>
-                            <Option value='placeholder 2'>Placeholder 2</Option>
-                        </Select>
-                    </div>
-                    <div id='experiment-display'>
-                        {displayExperiment()}
-                    </div>
+                <Fragment>
+                    <InfoBox selection={select}/>
+                    <Article theme={theme}>
+                        <header>
+                            <Headline title='Bored? Check these out.' theme={theme} />
+                        </header>
+                        <div id='experiment-dropdown'>
+                            <Select defaultValue='' onChange={(e)=>{setSelect(e)}}>
+                                <Option value='' disabled>Select an Experiment</Option>
+                                <Option value='Infinite XKCD'>Infinite XKCD</Option>
+                                <Option value='placeholder 1'>Placeholder 1</Option>
+                                <Option value='placeholder 2'>Placeholder 2</Option>
+                            </Select>
+                        </div>
+                        <div id='experiment-display'>
+                            {displayExperiment()}
+                        </div>
 
-                    {/* --- STYLES --- */}
-                    <style jsx>{`
-                        header{
-                            text-align: center;
-                        }
+                        {/* --- STYLES --- */}
+                        <style jsx>{`
+                            header{
+                                text-align: center;
+                            }
 
-                        #experiment-dropdown{
-                            text-align: center;
-                        }
-                    `}</style>
-                </Article>
+                            #experiment-dropdown{
+                                text-align: center;
+                            }
+                        `}</style>
+                    </Article>
+                </Fragment>
                 )}
             </ThemeContext.Consumer>
         </Fragment>

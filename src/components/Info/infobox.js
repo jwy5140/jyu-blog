@@ -1,0 +1,36 @@
+import React from 'react'
+import { Affix } from 'antd'
+
+const InfoBox = (props) => {
+
+    const Blurb = () => {
+        switch (props.selection) {
+            case 'Infinite XKCD':
+                return "I made this for fun after discovering that there was an XKCD API. It actually took longer than I thought to implement, as when I was first trying to create it, I encountered a CORS error (No 'Access-Control-Allow-Origin' header on the requested resource). I didn't know much about CORS at that point, so I had no clue what was happening. It turns out that without this header, the BROWSER does not allow my fetch request to succeed. Without this header, the API would only be accessible from XKCD's domain. To better clarify, setting this header to a splat '*' would allow any fetch request, including mine, to go through. If the header was specified as 'https://jayewe.com' then I would be able to succeed as well. The method I used to bypass Chrome's denial, was to set up a proxy to the XKCD API through AWS API Gateway, with CORS set up to allow requests from my website. It was a grueling experience - but I learned quite a bit!"
+            default:
+                return null
+        }
+    }
+
+    return <Affix offsetTop={window.innerHeight/4} style={{position: 'absolute', marginLeft: '7.5vw', width: '15vw'}}>
+        <div className='info-card'>
+            <h1 className='info-header'>
+                {props.selection}
+            </h1>
+            <p className='info-blurb'>
+                {Blurb()}
+            </p>
+        </div>
+        {/* --- STYLES --- */}
+        <style jsx>{`
+            .info-header{
+                margin: 1vh 0 1vh 0;
+            }
+
+            .info-blurb{
+            }
+        `}</style>
+    </Affix>
+}
+
+export default InfoBox
