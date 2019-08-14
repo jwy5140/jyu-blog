@@ -1,14 +1,19 @@
 import React, { Fragment, useState } from 'react'
+import { Modal } from 'antd'
 import RVS from 'react-visibility-sensor'
 
 const Comic = (props) => {
-    const [visible, setVisible] = useState (false)
+    const [visible, setVisible] = useState(false)
+    const [spotlight, setSpotlight] = useState(false)
 
     return <Fragment>
         <li className='xkcd-comic'>
             <RVS onChange={(v)=>{setVisible(v)}}>
-                <img className='comic-img' src={props.url} />
+                <img className='comic-img' onClick={()=>setSpotlight(true)} src={props.url} />
             </RVS>
+            <Modal visible={spotlight} footer={null} maskClosable={true} onCancel={()=>{setSpotlight(false)}} destroyOnClose={true} width={'85vw'} centered={true} style={{overflow: 'scroll'}}>
+                <img className='comic-img-spotlight' src={props.url}/>
+            </Modal>
         </li>
 
         {/* STYLES */}
@@ -29,7 +34,20 @@ const Comic = (props) => {
                 max-width: 100%;
                 opacity: ${visible ? 1 : 0};
                 transition: opacity 1000ms ease-in-out;
+                pointer-events: click;
             }
+
+            img.comic-img:hover{
+                cursor: pointer;
+            }
+
+            img.comic-img-spotlight{
+                display: block;
+                margin: 0 auto 0 auto;
+                min-width: 55vw;
+                max-width: 85vw;
+            }
+
         `}</style>
         </Fragment>
 }
