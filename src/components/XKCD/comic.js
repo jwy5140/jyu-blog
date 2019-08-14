@@ -6,7 +6,7 @@ const Comic = (props) => {
 
     return <Fragment>
         <li className='xkcd-comic'>
-            <RVS partialVisibility onChange={(v)=>{setVisible(v)}}>
+            <RVS onChange={(v)=>{setVisible(v)}}>
                 <img className='comic-img' src={props.url} />
             </RVS>
         </li>
@@ -25,8 +25,10 @@ const Comic = (props) => {
             }
 
             img.comic-img {
-                opacity: ${visible ? 1 : .1};
-                transition: opacity 2000ms ease-in-out;
+                max-height: 65vh;
+                max-width: 100%;
+                opacity: ${visible ? 1 : 0};
+                transition: opacity 1000ms ease-in-out;
             }
         `}</style>
         </Fragment>

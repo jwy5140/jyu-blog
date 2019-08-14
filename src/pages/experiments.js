@@ -53,6 +53,10 @@ const Experiments = () => {
                             #experiment-dropdown{
                                 text-align: center;
                             }
+
+                            #experiment-display{
+                                width: 100%;
+                            }
                         `}</style>
                     </Article>
                 </Fragment>
