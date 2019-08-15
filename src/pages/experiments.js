@@ -17,6 +17,8 @@ const Experiments = () => {
         switch (select){
             case 'Infinite XKCD':
                 return <Comics />
+            case 'Cyclone':
+                return <Cyclone />
             default:
                 return null
         }
@@ -36,8 +38,7 @@ const Experiments = () => {
                             <Select defaultValue='' onChange={(e)=>{setSelect(e)}}>
                                 <Option value='' disabled>Select an Experiment</Option>
                                 <Option value='Infinite XKCD'>Infinite XKCD</Option>
-                                <Option value='placeholder 1'>Placeholder 1</Option>
-                                <Option value='placeholder 2'>Placeholder 2</Option>
+                                <Option value='Cyclone'>Cyclone</Option>
                             </Select>
                         </div>
                         <div id='experiment-display'>
