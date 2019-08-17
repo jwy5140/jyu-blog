@@ -31,7 +31,7 @@ const ComicPage = () => {
     }
 
     const handleScroll = () => {
-        if ((document.documentElement.scrollTop + document.documentElement.offsetHeight) >= (document.querySelector('#comics').lastChild.offsetTop + document.querySelector('#comics').lastChild.scrollHeight)){
+        if ((document.documentElement.scrollTop + window.innerHeight) >= (document.querySelector('#comics').scrollHeight)){
             setFetching(true)
         }
     }
