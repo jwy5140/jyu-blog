@@ -31,7 +31,7 @@ const ComicPage = () => {
     }
 
     const handleScroll = () => {
-        if ((document.documentElement.scrollTop + window.innerHeight) >= (document.querySelector('#comics').scrollHeight)){
+        if ((document.documentElement.scrollTop + window.innerHeight) >= (document.documentElement.scrollHeight-window.innerHeight/2)){
             setFetching(true)
         }
     }
@@ -45,6 +45,7 @@ const ComicPage = () => {
     return (<Fragment>
                     <ul id='comics'>
                         <div className='xkcd-header'>
+                            <h1 className='mobile-warn'>NOTE: This experiment currently incompatible with mobile.</h1>
                             <h1>Scroll Down</h1>
                             <button onClick={scrollToContent} aria-label="scroll">
                                 <FaChevronDown />
@@ -64,6 +65,10 @@ const ComicPage = () => {
                 text-align: center;
                 padding-top: 25vh;
                 margin: 0 0 50vh 0;
+            }
+
+            .mobile-warn{
+                display: none;
             }
 
             #comics{
@@ -110,6 +115,12 @@ const ComicPage = () => {
                   transform: translateY(0);
                 }
               }
+              
+              @media only screen and (max-width: 812px){
+                .mobile-warn{
+                    display: block;
+                }
+            }
         `}
         </style>
     </Fragment>)
