@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Affix } from 'antd'
 
 const InfoBox = (props) => {
@@ -6,7 +6,7 @@ const InfoBox = (props) => {
     const Blurb = () => {
         switch (props.selection) {
             case 'Infinite XKCD':
-                return <div className='info-blurb'>
+                return <Fragment>
                     <p>
                         I made this for fun after discovering that there was an XKCD API.
                     </p><br/>
@@ -19,7 +19,13 @@ const InfoBox = (props) => {
                     <p>
                         To better clarify, setting this header to a splat '*' would allow any fetch request, including mine, to go through. If the header was specified as 'https://jayewe.com' then I would be able to succeed as well. The method I used to bypass Chrome's denial, was to set up a proxy to the XKCD API through AWS API Gateway, with CORS set up to allow requests from my website. It was a grueling experience - but I learned quite a bit!
                     </p>
-                    </div>
+                    </Fragment>
+            case 'Cyclone':
+                return <Fragment>
+                    <p>
+                        This experiment is still TBD.
+                    </p>
+                </Fragment>
             default:
                 return null
         }
@@ -30,7 +36,9 @@ const InfoBox = (props) => {
             <h1 className='info-header'>
                 {props.selection}
             </h1>
-            {Blurb()}
+            <div className='info-blurb'>
+                {Blurb()}
+            </div>
         </div>
         {/* --- STYLES --- */}
         <style jsx>{`
@@ -41,7 +49,7 @@ const InfoBox = (props) => {
             .info-card{
                 margin-left: 3.5vw;
                 position: absolute;
-                width: 25vw;
+                width: 20vw;
             }
 
             @media only screen and (max-width: 812px){

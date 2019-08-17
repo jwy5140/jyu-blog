@@ -4,6 +4,7 @@ import Article from "../components/Article";
 import Headline from "../components/Article/Headline";
 import { Select } from "antd"
 import Comics from '../components/XKCD/xkcd'
+import Cyclone from '../components/Cyclone/cyclone'
 import 'antd/dist/antd.css';
 
 import InfoBox from '../components/Info/infobox'

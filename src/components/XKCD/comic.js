@@ -21,7 +21,7 @@ const Comic = (props) => {
             .xkcd-comic {
                 padding-top: 25vh; 
                 margin: 0 0 25vh 0; 
-                border-top: 1px solid #333;
+                border-top: 1.25px solid black;
                 text-align: center;
             }
 
