@@ -31,6 +31,7 @@ This blog serves as a tool to share what I encounter on that journey.
 * I'm from Long Island, NY, and currently living in **Queens, NY**.
 * My favorite city is Berlin.
 * I studied **Petroleum Engineering** and **Russian** at **Penn State** (We Are!)
+* I'm currently looking for a Russian conversation partner (I'm out of practice, and my previous one left to travel :()
 * I love **snowboarding** and **hiking**.
 * **Electronic Music** holds a special place in my heart.
 * I'm E.I.T. certified.

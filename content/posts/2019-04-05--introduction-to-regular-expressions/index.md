@@ -1,11 +1,11 @@
 ---
-title: An Introduction to Regular Expressions
-category: tutorials
+title: The Basics of Regular Expressions
+category: General Tutorials
 cover: bookshelf.jpg
 author: Jeffrey Yu
 ---
 
-![bookshelf](./bookshelf.jpg "photo by Radu Marcusu on Unsplash")
+![bookshelf](./bookshelf.jpg "photo by @radu_marcusu on Unsplash")
 Regular expressions can be an overwhelming concept to the beginner programmer. Although _conceptually easy_ to understand, and having useful resources to reference online, to actually implement regular expressions can be incredibly difficult and confusing. There are many ways to make mistakes here -- and some mistakes may be hard to see.
 
 Regular expressions are tools to match specific patterns in a given string. Think about your general search bar when you press "ctrl + f" in any given program. You can enter letters, numbers, and symbols. You can choose to be general or specific (several letters of a word, or the entire word). The search bar will look for what you enter, and show you where the results are. 

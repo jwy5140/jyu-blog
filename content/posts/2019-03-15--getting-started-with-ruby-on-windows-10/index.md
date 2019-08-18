@@ -1,11 +1,11 @@
 ---
-title: Getting Started with Ruby on Windows 10
-category: "tutorials"
+title: Setting up Windows Subsystem for Linux and Ruby on Windows 10
+category: Windows
 cover: w-10-logo-red.jpeg
 author: Jeffrey Yu
 ---
 
-![windows-10-logo](./w-10-logo-red.jpeg)
+![windows-10-logo](./w-10-logo-red.jpeg "Windows 10 Logo")
 Ruby development has long been dominated by MacOS and Linux - with good reason. With just a few commands, you can have your Ruby environment set up with the Rails framework and begin developing. MacOS, being unix based, also fits well with Rails commands. This has lead to little support existing online for the Windows user. However, with the introduction of Windows Subsystem for Linux, the door to Ruby and Rails has opened wide for those who lack access to MacOS.
 
 ## Enable Windows Subsystem for Linux
