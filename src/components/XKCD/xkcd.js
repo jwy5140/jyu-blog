@@ -119,6 +119,7 @@ const ComicPage = () => {
               @media only screen and (max-width: 812px){
                 .mobile-warn{
                     display: block;
+                    margin-bottom: 2vh;
                 }
             }
         `}

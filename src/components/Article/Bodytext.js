@@ -53,6 +53,7 @@ const Bodytext = props => {
             border-radius: ${theme.size.radius.default};
             overflow: hidden;
             border: 1px solid ${theme.line.color};
+            border-collapse: separate;
           }
           :global(code.language-text) {
             background: ${theme.color.neutral.gray.c};
