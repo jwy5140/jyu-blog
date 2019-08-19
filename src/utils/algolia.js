@@ -7,7 +7,7 @@ module.exports = function(chunksTotal, { node }) {
 
   const noEmojiContent = content.replace(/<img class="emoji-icon".+\/>/g, "");
 
-  const contentChunks = chunkString(noEmojiContent, 10000);
+  const contentChunks = chunkString(noEmojiContent, 9000);
   const record = { title, slug, content };
   const recordChunks = contentChunks.reduce((recordChunksTotal, contentChunksItem, idx) => {
     return [
