@@ -127,7 +127,7 @@ export const BeefList = () => {
 
 ```
 
-<video autoplay loop width='700px'>
+<video autoplay loop width='100%'>
     <source src='./useState_demo.mp4' />
 </video>
 
@@ -163,7 +163,7 @@ const Timer = () => {
 }
 ```
 
-<video autoplay loop width='700px'>
+<video autoplay loop width='100%'>
     <source src='./useEffect_demo_1.mp4' />
 </video>
 
@@ -189,7 +189,7 @@ const Timer = () => {
 }
 ```
 
-<video autoplay loop width='700px'>
+<video autoplay loop width='100%'>
     <source src='./useEffect_demo_2.mp4' />
 </video>
 
@@ -228,7 +228,7 @@ const Timer = () => {
 }
 ```
 
-<video autoplay loop width='700px'>
+<video autoplay loop width='100%'>
     <source src='./useEffect_demo_2.mp4' />
 </video>
 

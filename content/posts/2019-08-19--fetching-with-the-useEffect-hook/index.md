@@ -175,7 +175,7 @@ export default Search;
 
 Done! Here's our final result below!
 
-<video autoplay loop width='700px'>
+<video autoplay loop width='100%'>
     <source src="./completed_search.mp4">
 </video>
 
