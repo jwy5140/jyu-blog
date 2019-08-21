@@ -26,6 +26,12 @@ const InfoBox = (props) => {
                         This experiment is still TBD.
                     </p>
                 </Fragment>
+            case 'Newbie':
+                return <Fragment>
+                    <p>
+                        This experiment is still TBD.
+                    </p>
+                </Fragment>
             default:
                 return null
         }

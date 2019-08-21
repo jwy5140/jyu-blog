@@ -4,11 +4,13 @@ import { ThemeContext } from "../layouts";
 import Article from "../components/Article";
 import Headline from "../components/Article/Headline";
 import { Select } from "antd"
-import Comics from '../components/XKCD/xkcd'
-import Cyclone from '../components/Cyclone/cyclone'
 import 'antd/dist/antd.css';
 import { graphql } from "gatsby";
 import Seo from "../components/Seo";
+
+import Comics from '../components/XKCD/xkcd'
+import Newbie from '../components/Newbie/newbie'
+import Cyclone from '../components/Cyclone/cyclone'
 
 import InfoBox from '../components/Info/infobox'
 
@@ -28,11 +30,13 @@ const Experiments = (props) => {
     const displayExperiment = () => {
         switch (select){
             case 'Infinite XKCD':
-                return <Comics />
+              return <Comics />
+            case 'Newbie':
+              return <Newbie />
             case 'Cyclone':
-                return <Cyclone />
+              return <Cyclone />
             default:
-                return null
+              return null
         }
     }
 
@@ -50,6 +54,7 @@ const Experiments = (props) => {
                             <Select defaultValue='' onChange={(e)=>{setSelect(e)}}>
                                 <Option value='' disabled>Select an Experiment</Option>
                                 <Option value='Infinite XKCD'>Infinite XKCD</Option>
+                                <Option value='Newbie' disabled>Newbie Job Search</Option>
                                 <Option value='Cyclone'>Cyclone</Option>
                             </Select>
                         </div>

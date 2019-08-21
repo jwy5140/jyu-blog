@@ -14,7 +14,6 @@ import avatar from "../../images/jpg/avatar.jpg";
 class Header extends React.Component {
   state = {
     fixed: false,
-    darkMode: false
   };
 
   visibilitySensorChange = val => {
@@ -48,9 +47,6 @@ class Header extends React.Component {
               <h2>{config.headerSubTitle}</h2>
             </div>
           </Link>
-          <div className='brightness'>
-            <Icon onClick={()=>{this.setState({...this.state, darkMode: !this.state.darkMode})}} component={FaLightbulb} style={{fontSize: '1.5em', color: this.state.darkMode ? 'white' : 'black'}}></Icon>
-          </div>
           <FontLoadedContext.Consumer>
             {loaded => (
               <ScreenWidthContext.Consumer>
