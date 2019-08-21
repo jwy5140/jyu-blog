@@ -229,7 +229,7 @@ const Timer = () => {
 ```
 
 <video autoplay loop width='100%'>
-    <source src='./useEffect_demo_2.mp4' />
+    <source src='./useEffect_demo_3.mp4' />
 </video>
 
 So you can see, the useEffect runs every time 'activate' is changed. 
