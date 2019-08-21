@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hero-blog",
+  "name": "jyu-portfolio",
   "version": "2.0.0",
-  "author": "Greg Lobinski <greglobinski@gmail.com>",
+  "author": "Jeffrey Yu <jwy5140@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@hot-loader/react-dom": "16.9.0",

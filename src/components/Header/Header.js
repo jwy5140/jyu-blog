@@ -2,6 +2,8 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 import VisibilitySensor from "react-visibility-sensor";
+import { Icon } from 'antd'
+import { FaLightbulb } from 'react-icons/fa';
 
 import { ScreenWidthContext, FontLoadedContext } from "../../layouts";
 import config from "../../../content/meta/config";
@@ -11,7 +13,8 @@ import avatar from "../../images/jpg/avatar.jpg";
 
 class Header extends React.Component {
   state = {
-    fixed: false
+    fixed: false,
+    darkMode: false
   };
 
   visibilitySensorChange = val => {
@@ -45,6 +48,9 @@ class Header extends React.Component {
               <h2>{config.headerSubTitle}</h2>
             </div>
           </Link>
+          <div className='brightness'>
+            <Icon onClick={()=>{this.setState({...this.state, darkMode: !this.state.darkMode})}} component={FaLightbulb} style={{fontSize: '1.5em', color: this.state.darkMode ? 'white' : 'black'}}></Icon>
+          </div>
           <FontLoadedContext.Consumer>
             {loaded => (
               <ScreenWidthContext.Consumer>
@@ -108,6 +114,15 @@ class Header extends React.Component {
             font-size: ${theme.font.size.xxs};
             letter-spacing: 0;
             margin: 0;
+          }
+
+          .brightness {
+            display: block;
+            margin: 0 auto 0 1.5vw;;
+          }
+
+          .anticon:hover {
+            cursor: pointer;
           }
 
           .logo {
