@@ -179,7 +179,7 @@ const Timer = () => {
     setTimeout(() => {
       setCount(count + 1);
     }, 3000);
-  }, []);       // An empty array of dependencies with useEffect mimics componentDidMount
+  }, []);    // An empty array of dependencies with useEffect mimics componentDidMount
 
   return (
     <div>

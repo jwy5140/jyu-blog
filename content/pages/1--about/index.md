@@ -15,7 +15,7 @@ So I've devoted myself to the journey of lifelong learning, and hope that I also
 
 This blog serves as a tool to share what I encounter on that journey.
 
-## My Current Languages:
+## My Current Knowledge:
 
 * Javascript || React
 * Ruby || Rails
@@ -23,8 +23,9 @@ This blog serves as a tool to share what I encounter on that journey.
 
 ## My Next Learning Goals:
 
-* Improving my C++
-* Delving into Scala
+* GraphQL
+* C++
+* Golang
 
 ## A few other things about me:
 
