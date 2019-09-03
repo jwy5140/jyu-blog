@@ -12,9 +12,11 @@ Uses components from Ant Design. (Plan to migrate to Material-UI in due time)
 
 ## Project Showcase
 
-Teamster
-The Tale of Eric
-SimpleCalendar (Currently _not_ so simple - will be scrapped and rebuilt. Backend basically nonexistant unfortunately)
+Teamster  
+
+The Tale of Eric  
+
+SimpleCalendar (Currently _not_ so simple - will be scrapped and rebuilt. Backend basically nonexistant unfortunately)  
 
 ## Experiments
 
