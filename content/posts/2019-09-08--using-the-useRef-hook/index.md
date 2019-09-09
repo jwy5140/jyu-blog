@@ -60,6 +60,7 @@ The result of this is:
 As you can see, despite the ref being set to equal state, it does not update when state updates.
 In this case, the ref is **always equal to what state does upon the initial mount**.
 To update the ref, one must set the 'current' value of the ref. 
+When you first call useRef, the first value of the current object of your variable is set to the argument you pass to useRef.  
 
 Lets make a small change to our above code: 
 
@@ -130,3 +131,5 @@ const RefExample = () => {
 <video autoplay loop width=100%>
     <source src='useRef_demo_3.mp4' />
 </video>
+
+
