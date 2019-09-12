@@ -11,6 +11,7 @@ import Seo from "../components/Seo";
 import Comics from '../components/XKCD/xkcd'
 import Newbie from '../components/Newbie/newbie'
 import Cyclone from '../components/Cyclone/cyclone'
+import SortVisualizer from '../components/SortVisualizer'
 
 import InfoBox from '../components/Info/infobox'
 
@@ -35,6 +36,8 @@ const Experiments = (props) => {
               return <Newbie />
             case 'Cyclone':
               return <Cyclone />
+            case 'SortVisualizer':
+              return <SortVisualizer />
             default:
               return null
         }
@@ -54,8 +57,9 @@ const Experiments = (props) => {
                             <Select defaultValue='' onChange={(e)=>{setSelect(e)}}>
                                 <Option value='' disabled>Select an Experiment</Option>
                                 <Option value='Infinite XKCD'>Infinite XKCD</Option>
+                                <Option value='SortVisualizer'>Sort Visualizer</Option>
                                 <Option value='Newbie' disabled>Newbie Job Search</Option>
-                                <Option value='Cyclone'>Cyclone</Option>
+                                <Option value='Cyclone' disabled>Cyclone</Option>
                             </Select>
                         </div>
                         <div id='experiment-display'>
