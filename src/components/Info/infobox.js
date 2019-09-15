@@ -20,7 +20,7 @@ const InfoBox = (props) => {
                         To better clarify, setting this header to a splat '*' would allow any fetch request, including mine, to go through. If the header was specified as 'https://jayewe.com' then I would be able to succeed as well. The method I used to bypass Chrome's denial, was to set up a proxy to the XKCD API through AWS API Gateway, with CORS set up to allow requests from my website. It was a grueling experience - but I learned quite a bit!
                     </p>
                     </Fragment>
-            case 'SortVisualizer':
+            case 'Sort Visualizer':
                 return <Fragment>
                     <p>
                         This experiment is still TBD.

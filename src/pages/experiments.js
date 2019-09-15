@@ -36,7 +36,7 @@ const Experiments = (props) => {
               return <Newbie />
             case 'Cyclone':
               return <Cyclone />
-            case 'SortVisualizer':
+            case 'Sort Visualizer':
               return <SortVisualizer />
             default:
               return null
@@ -57,7 +57,7 @@ const Experiments = (props) => {
                             <Select defaultValue='' onChange={(e)=>{setSelect(e)}}>
                                 <Option value='' disabled>Select an Experiment</Option>
                                 <Option value='Infinite XKCD'>Infinite XKCD</Option>
-                                <Option value='SortVisualizer'>Sort Visualizer</Option>
+                                <Option value='Sort Visualizer'>Sort Visualizer</Option>
                                 <Option value='Newbie' disabled>Newbie Job Search</Option>
                                 <Option value='Cyclone' disabled>Cyclone</Option>
                             </Select>
