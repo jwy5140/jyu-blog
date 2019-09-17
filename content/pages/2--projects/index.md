@@ -18,7 +18,8 @@ An accountability partner app - meet people and reach your goals.
 
 <a href='https://simplecalendar.jayewe.com' target='_blank'><img src='./simple-calendar.png' alt='SimpleCalendar'/></a>
 
-A simple calendar interface - make/schedule events.
+A simple calendar interface - make/schedule events. Currently outdated as my CSS has well developed beyond this. 
+Ideally, would like to create a new npm package for calendars in the future.
 
 <a href='https://simplecalendar.jayewe.com' target='_blank'>Live Link</a> | <a href='https://github.com/jwy5140/Simple-Calendar-App' target='_blank'>Github Repo</a>
 

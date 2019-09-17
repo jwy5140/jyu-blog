@@ -18,7 +18,7 @@ module.exports = function(chunksTotal, { node }) {
     ];
   }, []);
 
-  const recordChunks_2 = recordChunks.filter((entry)=>{return entry.title !== 'Success'})
+  const recordChunks_2 = recordChunks.filter((entry)=>{return entry.title !== 'Success' && entry.title !== 'About Me' && entry.title !== 'Projects'})
 
   return [...chunksTotal, ...recordChunks_2];
 };
