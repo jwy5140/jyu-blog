@@ -163,6 +163,6 @@ These are powerful tools of organization in what could be a chaotic codebase, ea
 Many people are quite against usage of submodules, and strongly advocate the usage of subtrees.
 In fact, when first scouring for information regarding submodules, I saw references to submodules as 'sobmodules', and even found this little gem of a tweet: 
 
-![rip-submodules](./submodule-comic.jpg 'People don't want you to use submodules.')
+![Rip Submodules](./submodule-comic.jpg)
 
 However, when it comes to your own projects, it is up to you whether you want to use one or the other.
