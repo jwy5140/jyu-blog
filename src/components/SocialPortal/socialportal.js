@@ -6,7 +6,7 @@ const SocialPortal = () => {
     
     const [visible, setVisible] = useState(false)
 
-    return <Affix offsetTop={window.innerHeight*.9/2}>
+    return <Affix offsetTop={typeof window !== 'undefined' ? window.innerHeight*.9/2 : null}>
         <div className="social-portal">
             <li>
                 <a href="https://www.linkedin.com/in/psujeffreyyu/" target="_blank">
