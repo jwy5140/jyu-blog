@@ -1,32 +1,40 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { Affix } from 'antd'
+import React, { useState } from 'react'
+import { Affix, Icon } from 'antd'
+import RVS from 'react-visibility-sensor'
 
 const SocialPortal = () => {
+    
+    const [visible, setVisible] = useState(false)
 
     return <Affix offsetTop={window.innerHeight*.9/2}>
-        <div>
+        <div className="social-portal">
             <li>
-                Link 1
+                <a href="https://www.linkedin.com/in/psujeffreyyu/" target="_blank">
+                    <Icon type="linkedin" style={{fontSize: "7.5vh", color: "#2867B2"}}/>
+                </a>
             </li>
-            <li>
-                Link 2
-            </li>
-            <li>
-                Link 3
-            </li>
+            <RVS onChange={(v)=>setVisible(v)}>
+                <li>
+                    <a href="https://github.com/jwy5140" target="_blank">
+                        <Icon type="github" style={{fontSize: "7.5vh", color: "black"}} />
+                    </a>
+                </li>
+            </RVS>
         </div>
         <style jsx>{`
             div {
                 position: absolute;
-                height: 10vh;
+                height: 15vh;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
+                align-items: flex-start;
+                justify-content: center;
             }
             li {
                 list-style-type: none;
-            }    
+                opacity: ${visible ? 1 : 0};
+                transition: opacity 1500ms ease-in-out;
+            }   
         `}</style>
     </Affix>
 }
