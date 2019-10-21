@@ -35,6 +35,11 @@ const SocialPortal = () => {
                 opacity: ${visible ? 1 : 0};
                 transition: opacity 1500ms ease-in-out;
             }   
+            @media only screen and (max-width: 600px) {
+                div {
+                    display: none;
+                }
+            }
         `}</style>
     </Affix>
 }
