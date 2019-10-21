@@ -5,6 +5,7 @@ import { ThemeContext } from "../layouts";
 import Blog from "../components/Blog";
 import Hero from "../components/Hero";
 import Seo from "../components/Seo";
+import SocialPortal from "../components/SocialPortal"
 
 class IndexPage extends React.Component {
   separator = React.createRef();
@@ -40,6 +41,9 @@ class IndexPage extends React.Component {
 
     return (
       <React.Fragment>
+
+        <SocialPortal />
+
         <ThemeContext.Consumer>
           {theme => (
             <Hero scrollToContent={this.scrollToContent} backgrounds={backgrounds} theme={theme} />
