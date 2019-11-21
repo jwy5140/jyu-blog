@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Affix, Icon } from 'antd'
 import RVS from 'react-visibility-sensor'
 
-const SocialPortal = () => {
+const SocialPortal = (props) => {
     
     const [visible, setVisible] = useState(false)
 
@@ -33,7 +33,7 @@ const SocialPortal = () => {
             li {
                 list-style-type: none;
                 opacity: ${visible ? 1 : 0};
-                transition: opacity 1500ms ease-in-out;
+                transition: opacity 1.5s ease-in-out;
             }   
             @media only screen and (max-width: 600px) {
                 div {
