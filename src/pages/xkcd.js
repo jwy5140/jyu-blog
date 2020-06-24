@@ -3,7 +3,7 @@ import { ThemeContext } from '../layouts';
 import Article from "../components/Article";
 import Headline from "../components/Article/Headline";
 import Comic from '../images/jpg/comic'
-import uuid from 'uuid/v4'
+import {v4 as uuid} from 'uuid'
 import { Z_BLOCK } from 'zlib';
 
 const comicPage = () => {
