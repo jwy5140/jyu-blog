@@ -85,7 +85,7 @@ const Contact = props => {
                   <TextArea name="message" placeholder="" autosize={{ minRows: 4, maxRows: 10 }} />
                 )}
               </FormItem>
-              <FormItem label='hpt'>
+              <FormItem style={{display: 'none'}} label='hpt'>
                 {getFieldDecorator("hpt", {
                   rules: [
                     { required: false, whitespace: true }

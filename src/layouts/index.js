@@ -66,11 +66,11 @@ class Layout extends React.Component {
 
     font.load(null, 10000).then(
       () => {
-        console.log(`${name} is available`);
+        // console.log(`${name} is available`);
         this.setState({ [`${name}loaded`]: true });
       },
       () => {
-        console.log(`${name} is not available`);
+        // console.log(`${name} is not available`);
       }
     );
   };
@@ -170,6 +170,20 @@ class Layout extends React.Component {
                         width: auto;
                         display: block;
                       }
+                      ::-webkit-scrollbar{
+                        width: .45vw;
+                        height: 0;
+                        background: transparent;
+                      }
+                      ::-webkit-scrollbar-track{
+                        display: none;
+                      }
+                      ::-webkit-scrollbar-thumb {
+                        background: rgb(150, 150, 150, .8); 
+                      }
+                      ::-webkit-scrollbar-thumb:hover {
+                        background: rgb(125, 125, 125, 1); 
+                      }
                     `}</style>
                   </React.Fragment>
                 </ScreenWidthContext.Provider>
@@ -189,33 +203,3 @@ Layout.propTypes = {
 };
 
 export default Layout;
-
-//eslint-disable-next-line no-undef
-/*
-export const postQuery = graphql`
-  query LayoutQuery {
-    pages: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "//pages//" }, fields: { prefix: { regex: "/^\\d+$/" } } }
-      sort: { fields: [fields___prefix], order: ASC }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-            prefix
-          }
-          frontmatter {
-            title
-            menuTitle
-          }
-        }
-      }
-    }
-    footnote: markdownRemark(fileAbsolutePath: { regex: "/footnote/" }) {
-      id
-      html
-    }
-  }
-`;
-
-*/

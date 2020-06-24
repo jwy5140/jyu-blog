@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hero-blog",
+  "name": "jyu-portfolio",
   "version": "2.0.0",
-  "author": "Greg Lobinski <greglobinski@gmail.com>",
+  "author": "Jeffrey Yu <jwy5140@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "algoliasearch": "^3.35.1",
@@ -47,9 +47,9 @@
     "react-instantsearch": "^5.7.0",
     "react-md-spinner": "^1.0.0",
     "react-obfuscate": "^3.6.2",
-    "react-share": "^3.0.0",
+    "react-share": "^3.0.1",
     "react-visibility-sensor": "^5.1.1",
-    "styled-jsx": "^3.2.1",
+    "styled-jsx": "^3.2.4",
     "styled-jsx-plugin-postcss": "^2.0.1",
     "styled-jsx-plugin-stylelint": "^0.1.0",
     "tinycolor2": "^1.4.1",

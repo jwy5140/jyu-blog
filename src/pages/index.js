@@ -5,6 +5,7 @@ import { ThemeContext } from "../layouts";
 import Blog from "../components/Blog";
 import Hero from "../components/Hero";
 import Seo from "../components/Seo";
+import SocialPortal from "../components/SocialPortal"
 
 class IndexPage extends React.Component {
   separator = React.createRef();
@@ -40,6 +41,7 @@ class IndexPage extends React.Component {
 
     return (
       <React.Fragment>
+
         <ThemeContext.Consumer>
           {theme => (
             <Hero scrollToContent={this.scrollToContent} backgrounds={backgrounds} theme={theme} />
@@ -47,6 +49,8 @@ class IndexPage extends React.Component {
         </ThemeContext.Consumer>
 
         <hr ref={this.separator} />
+
+        <SocialPortal />
 
         <ThemeContext.Consumer>
           {theme => <Blog posts={posts} theme={theme} />}
@@ -109,17 +113,17 @@ export const query = graphql`
         }
       }
     }
-    bgDesktop: imageSharp(fluid: { originalName: { regex: "/hero-background/" } }) {
+    bgDesktop: imageSharp(fluid: { originalName: { regex: "/karina-vorozheeva-unsplash/" } }) {
       resize(width: 1200, quality: 90, cropFocus: CENTER) {
         src
       }
     }
-    bgTablet: imageSharp(fluid: { originalName: { regex: "/hero-background/" } }) {
+    bgTablet: imageSharp(fluid: { originalName: { regex: "/karina-vorozheeva-unsplash/" } }) {
       resize(width: 800, height: 1100, quality: 90, cropFocus: CENTER) {
         src
       }
     }
-    bgMobile: imageSharp(fluid: { originalName: { regex: "/hero-background/" } }) {
+    bgMobile: imageSharp(fluid: { originalName: { regex: "/karina-vorozheeva-unsplash/" } }) {
       resize(width: 450, height: 850, quality: 90, cropFocus: CENTER) {
         src
       }
@@ -127,4 +131,3 @@ export const query = graphql`
   }
 `;
 
-//hero-background

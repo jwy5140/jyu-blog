@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { FaArrowDown } from "react-icons/fa/";
+import { FaChevronDown } from "react-icons/fa/";
 
 const Hero = props => {
   const { scrollToContent, backgrounds, theme } = props;
@@ -13,7 +13,7 @@ const Hero = props => {
           Hi. I'm Jeff. Welcome to my website.
         </h1>
         <button onClick={scrollToContent} aria-label="scroll">
-          <FaArrowDown />
+          <FaChevronDown />
         </button>
       </section>
 
@@ -29,12 +29,13 @@ const Hero = props => {
           flex-flow: column nowrap;
           justify-content: center;
           min-height: 100vh;
-          height: 100px;
+          min-width: 100vw;
           padding: ${theme.space.inset.l};
           padding-top: ${theme.header.height.homepage};
         }
 
         h1 {
+          pointer-events: none;
           text-align: center;
           font-size: ${theme.hero.h1.size};
           margin: ${theme.space.stack.l};
@@ -60,8 +61,8 @@ const Hero = props => {
         }
 
         button {
-          background: ${theme.background.color.brand};
-          border: 0;
+          background: rgb(0, 0, 0, 0);
+          border: none;
           border-radius: 50%;
           font-size: ${theme.font.size.m};
           padding: ${theme.space.s} ${theme.space.m};
@@ -83,6 +84,19 @@ const Hero = props => {
             animation-duration: ${theme.time.duration.long};
             animation-name: buttonIconMove;
             animation-iteration-count: infinite;
+          }
+        }
+
+        button:hover {
+          animation: buttonIconHover ease-in-out .5s forwards;
+        }
+
+        @keyframes buttonIconHover {
+          0% {
+            background: rgb(0, 0, 0, 0);
+          }
+          100% {
+            background: ${theme.color.brand.primary};
           }
         }
 

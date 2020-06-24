@@ -13,9 +13,9 @@ However, in order to achieve creation, improvement, and to succeed in helping ot
 
 So I've devoted myself to the journey of lifelong learning, and hope that I also discover along the way.
 
-This blog serves as a tool to share what I encounter on that journey :) 
+This blog serves as a tool to share what I encounter on that journey.
 
-## My Current Languages:
+## My Current Knowledge:
 
 * Javascript || React
 * Ruby || Rails
@@ -23,14 +23,16 @@ This blog serves as a tool to share what I encounter on that journey :)
 
 ## My Next Learning Goals:
 
-* Improving my C++
-* Delving into Scala
+* GraphQL
+* C++
+* Golang
 
 ## A few other things about me:
 
 * I'm from Long Island, NY, and currently living in **Queens, NY**.
 * My favorite city is Berlin.
 * I studied **Petroleum Engineering** and **Russian** at **Penn State** (We Are!)
+* I'm currently looking for a Russian conversation partner (I'm out of practice, and my previous one left to travel :()
 * I love **snowboarding** and **hiking**.
 * **Electronic Music** holds a special place in my heart.
 * I'm E.I.T. certified.

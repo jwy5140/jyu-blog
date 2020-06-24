@@ -1,7 +1,4 @@
-import { FaArrowRight } from "react-icons/fa/";
-import { FaCalendar } from "react-icons/fa/";
-import { FaTag } from "react-icons/fa/";
-import { FaUser } from "react-icons/fa/";
+import { FaArrowRight, FaCalendar, FaTag, FaUser } from "react-icons/fa/";
 import Img from "gatsby-image";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
@@ -37,6 +34,9 @@ const Item = props => {
           <p className="meta">
             <span>
               <FaCalendar size={18} /> {prefix}
+            </span>
+            <span>
+              <FaUser size={18} /> {author}
             </span>
             {category && (
               <span>
@@ -221,7 +221,7 @@ const Item = props => {
             }
             :global(.arrow) {
               display: inline-block;
-              fill: ${theme.color.special.attention};
+              fill: transparent;
               stroke: ${theme.color.special.attention};
               stroke-width: 40;
               stroke-linecap: round;

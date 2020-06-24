@@ -1,11 +1,11 @@
 ---
-title: An Introduction to Regular Expressions
-category: tutorials
+title: The Basics of Regular Expressions
+category: General Tutorials
 cover: bookshelf.jpg
 author: Jeffrey Yu
 ---
 
-![bookshelf](./bookshelf.jpg "photo by Radu Marcusu on Unsplash")
+![bookshelf](./bookshelf.jpg "photo by @radu_marcusu on Unsplash")
 Regular expressions can be an overwhelming concept to the beginner programmer. Although _conceptually easy_ to understand, and having useful resources to reference online, to actually implement regular expressions can be incredibly difficult and confusing. There are many ways to make mistakes here -- and some mistakes may be hard to see.
 
 Regular expressions are tools to match specific patterns in a given string. Think about your general search bar when you press "ctrl + f" in any given program. You can enter letters, numbers, and symbols. You can choose to be general or specific (several letters of a word, or the entire word). The search bar will look for what you enter, and show you where the results are. 
@@ -53,6 +53,7 @@ _In Windows, pressing 'return' generates '\r\n', in Linux and Unix, only '\n' is
 
 ## Differences in functionality between languages
 Although regular expressions are easily distinguishable by their syntax, there are differences between their application in different languages. For example, JavaScript and C++ do not have regular expression conditionals, whereas Ruby does. This can significantly change how a regular expression is written to solve a specific problem. For example, in Ruby, one might write something like:
+
 ```ruby
 tel = "123-456-7890".match /^(1-)?(?(1)\d{3}-|(\d{3}-)?)\d{3}-\d{4}/
 ```
